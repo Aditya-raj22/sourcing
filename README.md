@@ -1,11 +1,8 @@
-README.md — Context for the Outreach Engine
-
-Project Name: VibeOutreach
-Purpose: Build an AI-driven outreach engine that helps a student founder discover industry pain points by talking directly with professionals (starting with 300 Duke alumni).
+Purpose: Build an AI-driven outreach engine
 
 Design Philosophy:
 
-Lightweight. Startup-style minimal viable product — no over-engineering, no unnecessary abstractions.
+Lightweight. Build smart, using minimal lines of efficient code.Startup-style minimal viable product — no over-engineering, no unnecessary abstractions.
 
 Human-in-the-loop. AI automates the drudgework (enrichment, clustering, draft emails, follow-ups) but user always approves sends.
 
@@ -41,7 +38,7 @@ AI: OpenAI API (GPT-4 Turbo, text-embedding-3-large)
 
 Database: SQLite / Firestore
 
-Email: Gmail API (mocked in tests)
+Email: Gmail API (will provide for tests)
 
 Scheduler: APScheduler or cron
 
