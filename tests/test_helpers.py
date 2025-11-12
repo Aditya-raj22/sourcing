@@ -54,7 +54,7 @@ class ReplyIntent(Enum):
 
 @dataclass
 class Contact:
-    email: str
+    email: str = ""
     id: Optional[int] = None
     name: Optional[str] = None
     industry: Optional[str] = None
@@ -170,6 +170,76 @@ class SpamAnalysis:
 # Mock Database
 # ============================================================================
 
+class MockQuery:
+    """Mock SQLAlchemy query interface."""
+
+    def __init__(self, db, model):
+        self.db = db
+        self.model = model
+        self.filters = []
+        self._limit = None
+        self._offset = 0
+
+    def filter(self, *conditions):
+        """Add filter conditions."""
+        self.filters.append(conditions)
+        return self
+
+    def filter_by(self, **kwargs):
+        """Add filter by kwargs."""
+        self.filters.append(kwargs)
+        return self
+
+    def first(self):
+        """Get first result."""
+        results = self.all()
+        return results[0] if results else None
+
+    def all(self):
+        """Get all results."""
+        if self.model == Contact:
+            results = list(self.db.contacts.values())
+        elif self.model == EmailDraft:
+            results = list(self.db.drafts.values())
+        elif self.model == Reply:
+            results = list(self.db.replies.values())
+        else:
+            results = []
+
+        # Apply filters (simplified)
+        for filter_cond in self.filters:
+            if isinstance(filter_cond, dict):
+                # filter_by style
+                for key, value in filter_cond.items():
+                    results = [r for r in results if getattr(r, key, None) == value]
+
+        # Apply limit/offset
+        if self._offset:
+            results = results[self._offset:]
+        if self._limit:
+            results = results[:self._limit]
+
+        return results
+
+    def count(self):
+        """Count results."""
+        return len(self.all())
+
+    def limit(self, n):
+        """Limit results."""
+        self._limit = n
+        return self
+
+    def offset(self, n):
+        """Offset results."""
+        self._offset = n
+        return self
+
+    def order_by(self, *args):
+        """Order results (no-op for mock)."""
+        return self
+
+
 class MockDatabase:
     def __init__(self, connection_string: str):
         self.connection_string = connection_string
@@ -188,6 +258,33 @@ class MockDatabase:
     def close(self):
         """Close database connection."""
         pass
+
+    def save(self, obj):
+        """Generic save method that dispatches to specific save methods."""
+        if isinstance(obj, Contact):
+            return self.save_contact(obj)
+        elif isinstance(obj, EmailDraft):
+            return self.save_draft(obj)
+        elif isinstance(obj, Reply):
+            return self.save_reply(obj)
+        else:
+            raise ValueError(f"Unknown object type: {type(obj)}")
+
+    def add(self, obj):
+        """Alias for save to match SQLAlchemy interface."""
+        return self.save(obj)
+
+    def commit(self):
+        """Mock commit (no-op)."""
+        pass
+
+    def refresh(self, obj):
+        """Mock refresh (no-op since we don't have lazy loading)."""
+        pass
+
+    def query(self, model):
+        """Mock query interface."""
+        return MockQuery(self, model)
 
     def save_contact(self, contact: Contact) -> int:
         if contact.id is None:
