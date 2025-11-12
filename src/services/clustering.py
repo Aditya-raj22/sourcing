@@ -13,7 +13,15 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-client = OpenAI(api_key=config.OPENAI_API_KEY)
+_client = None
+
+def get_openai_client():
+    global _client
+    if _client is None:
+        if not config.OPENAI_API_KEY:
+            raise ValueError("OPENAI_API_KEY not configured")
+        _client = OpenAI(api_key=config.OPENAI_API_KEY)
+    return _client
 
 
 def generate_embedding(text: str, model: str = None) -> List[float]:

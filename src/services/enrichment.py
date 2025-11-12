@@ -14,8 +14,17 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# Initialize OpenAI client
-client = OpenAI(api_key=config.OPENAI_API_KEY)
+# Lazy-load OpenAI client
+_client = None
+
+def get_openai_client():
+    """Get or create OpenAI client."""
+    global _client
+    if _client is None:
+        if not config.OPENAI_API_KEY:
+            raise ValueError("OPENAI_API_KEY not configured")
+        _client = OpenAI(api_key=config.OPENAI_API_KEY)
+    return _client
 
 
 def enrich_contact(
@@ -59,7 +68,7 @@ Please provide:
 Return ONLY a valid JSON object with these exact fields. Be specific and avoid generic responses."""
 
         # Call GPT-4
-        response = client.chat.completions.create(
+        response = get_openai_client().chat.completions.create(
             model=config.OPENAI_MODEL_GPT,
             messages=[
                 {"role": "system", "content": "You are a B2B contact research assistant. Provide specific, actionable insights."},

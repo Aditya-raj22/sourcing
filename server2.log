@@ -1,0 +1,579 @@
+INFO:     Will watch for changes in these directories: ['/home/user/sourcing']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [5893] using WatchFiles
+INFO:     Started server process [5926]
+INFO:     Waiting for application startup.
+2025-11-12 01:37:04,228 - main - INFO - Starting AI-Driven Outreach Engine...
+2025-11-12 01:37:04,234 - main - INFO - Database tables created
+2025-11-12 01:37:04,234 - main - INFO - Application started successfully
+INFO:     Application startup complete.
+2025-11-12 01:37:04,280 - watchfiles.main - INFO - 4 changes detected
+2025-11-12 01:37:04,633 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:04,984 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:05,336 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:05,688 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:06,040 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:06,391 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:06,743 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:07,096 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:07,448 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:07,798 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:08,149 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:08,500 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:08,852 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:09,203 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:09,554 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:09,906 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:10,258 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:10,610 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:10,962 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:11,314 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:11,667 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:12,019 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:12,372 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:12,724 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:13,076 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:13,429 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:13,781 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:14,133 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:14,486 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:14,838 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:15,190 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:15,543 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:15,895 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:16,248 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:16,600 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:16,952 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:17,304 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:17,656 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:18,009 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:18,361 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:18,713 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:19,065 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:19,417 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:19,769 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:20,120 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:20,471 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:20,823 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:21,174 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:21,526 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:21,877 - watchfiles.main - INFO - 1 change detected
+INFO:     127.0.0.1:43328 - "GET /health HTTP/1.1" 200 OK
+2025-11-12 01:37:22,229 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:22,581 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:22,933 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:23,285 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:23,638 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:23,990 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:24,342 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:24,694 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:25,047 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:25,398 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:25,749 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:26,101 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:26,453 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:26,805 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:27,158 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:27,509 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:27,861 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:28,214 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:28,566 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:28,918 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:29,270 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:29,621 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:29,973 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:30,324 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:30,675 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:31,026 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:31,378 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:31,729 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:32,080 - watchfiles.main - INFO - 1 change detected
+INFO:     127.0.0.1:65064 - "GET /health HTTP/1.1" 200 OK
+2025-11-12 01:37:32,433 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:32,785 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:33,137 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:33,349 - src.services.import_export - ERROR - Error importing row 2: 'location' is an invalid keyword argument for Contact
+2025-11-12 01:37:33,350 - src.services.import_export - ERROR - Error importing row 3: 'location' is an invalid keyword argument for Contact
+2025-11-12 01:37:33,351 - src.services.import_export - ERROR - Error importing row 4: 'location' is an invalid keyword argument for Contact
+2025-11-12 01:37:33,352 - src.services.import_export - ERROR - Error importing row 5: 'location' is an invalid keyword argument for Contact
+2025-11-12 01:37:33,352 - src.services.import_export - ERROR - Error importing row 6: 'location' is an invalid keyword argument for Contact
+2025-11-12 01:37:33,353 - src.services.import_export - INFO - Imported 0 contacts, 5 errors, 0 duplicates
+INFO:     127.0.0.1:41052 - "POST /api/contacts/import HTTP/1.1" 200 OK
+2025-11-12 01:37:33,488 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:33,840 - watchfiles.main - INFO - 1 change detected
+INFO:     127.0.0.1:19096 - "GET /api/contacts/ HTTP/1.1" 200 OK
+2025-11-12 01:37:34,192 - watchfiles.main - INFO - 1 change detected
+INFO:     127.0.0.1:60875 - "GET /api/contacts/ HTTP/1.1" 200 OK
+2025-11-12 01:37:34,544 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:34,895 - watchfiles.main - INFO - 1 change detected
+INFO:     127.0.0.1:27601 - "GET /api/campaigns/stats HTTP/1.1" 200 OK
+2025-11-12 01:37:35,247 - watchfiles.main - INFO - 1 change detected
+INFO:     127.0.0.1:25352 - "GET /api/contacts/export/csv HTTP/1.1" 200 OK
+2025-11-12 01:37:35,599 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:35,951 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:36,303 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:36,656 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:37,008 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:37,359 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:37,712 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:38,063 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:38,416 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:38,768 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:39,120 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:39,472 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:39,823 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:40,175 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:40,526 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:40,878 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:41,230 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:41,583 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:41,934 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:42,287 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:42,640 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:42,992 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:43,344 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:43,696 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:44,048 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:44,400 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:44,751 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:45,103 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:45,455 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:45,807 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:46,159 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:46,511 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:46,863 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:47,215 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:47,567 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:47,918 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:48,270 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:48,622 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:48,974 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:49,326 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:49,679 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:50,030 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:50,382 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:50,733 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:51,085 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:51,437 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:51,788 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:52,140 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:52,493 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:52,846 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:53,198 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:53,550 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:53,901 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:54,254 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:54,606 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:54,958 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:55,310 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:55,662 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:56,013 - watchfiles.main - INFO - 4 changes detected
+WARNING:  WatchFiles detected changes in 'test_live.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-11-12 01:37:56,211 - main - INFO - Shutting down...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5926]
+2025-11-12 01:37:56,871 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:57,223 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:57,574 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:57,926 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:58,277 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:58,629 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:58,981 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:59,332 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:37:59,684 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:00,036 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:00,388 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:00,740 - watchfiles.main - INFO - 1 change detected
+INFO:     Started server process [7184]
+INFO:     Waiting for application startup.
+2025-11-12 01:38:00,972 - main - INFO - Starting AI-Driven Outreach Engine...
+2025-11-12 01:38:00,979 - main - INFO - Database tables created
+2025-11-12 01:38:00,980 - main - INFO - Application started successfully
+INFO:     Application startup complete.
+2025-11-12 01:38:01,092 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:01,445 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:01,796 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:02,147 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:02,499 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:02,851 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:03,202 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:03,553 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:03,904 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:04,255 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:04,606 - watchfiles.main - INFO - 1 change detected
+INFO:     127.0.0.1:36405 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52875 - "POST /api/contacts/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 782, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/routing.py", line 299, in app
+    raise e
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/sourcing/src/api/contacts.py", line 61, in create_contact
+    new_contact = Contact(**contact.dict(), status=ContactStatus.IMPORTED)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/orm/state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/orm/state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/orm/decl_base.py", line 2142, in _declarative_constructor
+    raise TypeError(
+TypeError: 'location' is an invalid keyword argument for Contact
+INFO:     127.0.0.1:43625 - "POST /api/contacts/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 782, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/routing.py", line 299, in app
+    raise e
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/sourcing/src/api/contacts.py", line 61, in create_contact
+    new_contact = Contact(**contact.dict(), status=ContactStatus.IMPORTED)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/orm/state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/orm/state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/orm/decl_base.py", line 2142, in _declarative_constructor
+    raise TypeError(
+TypeError: 'location' is an invalid keyword argument for Contact
+INFO:     127.0.0.1:53544 - "POST /api/contacts/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 782, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.11/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.11/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/routing.py", line 299, in app
+    raise e
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/sourcing/src/api/contacts.py", line 61, in create_contact
+    new_contact = Contact(**contact.dict(), status=ContactStatus.IMPORTED)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/orm/state.py", line 566, in _initialize_instance
+    with util.safe_reraise():
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/orm/state.py", line 564, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/usr/local/lib/python3.11/dist-packages/sqlalchemy/orm/decl_base.py", line 2142, in _declarative_constructor
+    raise TypeError(
+TypeError: 'location' is an invalid keyword argument for Contact
+INFO:     127.0.0.1:48446 - "GET /api/contacts/ HTTP/1.1" 200 OK
+2025-11-12 01:38:04,959 - watchfiles.main - INFO - 1 change detected
+INFO:     127.0.0.1:42847 - "GET /api/campaigns/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:30609 - "GET /api/contacts/export/csv HTTP/1.1" 200 OK
+2025-11-12 01:38:05,310 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:05,662 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:06,014 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:06,366 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:06,718 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:07,070 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:07,421 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:07,773 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:08,125 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:08,477 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:08,829 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:09,182 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:09,534 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:09,886 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:10,237 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:10,589 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:10,940 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:11,292 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:11,643 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:11,994 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:12,345 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:12,696 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:13,047 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:13,399 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:13,751 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:14,103 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:14,455 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:14,807 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:15,159 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:15,510 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:15,862 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:16,214 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:16,566 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:16,919 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:17,271 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:17,623 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:17,975 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:18,327 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:18,679 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:19,030 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:19,381 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:19,732 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:20,083 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:20,435 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:20,786 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:21,137 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:21,490 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:21,842 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:22,194 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:22,545 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:22,897 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:23,250 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:23,601 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:23,953 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:24,305 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:24,656 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:25,007 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:25,359 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:25,711 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:26,063 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:26,415 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:26,767 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:27,119 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:27,471 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:27,823 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:28,175 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:28,527 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:28,879 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:29,230 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:29,583 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:29,936 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:30,288 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:30,639 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:30,992 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:31,344 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:31,696 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:32,047 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:32,399 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:32,750 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:33,102 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:33,453 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:33,804 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:34,155 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:34,507 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:34,858 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:35,210 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:35,563 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:35,915 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:36,267 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:36,619 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:36,971 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:37,323 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:37,675 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:38,027 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:38,380 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:38,732 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:39,084 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:39,437 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:39,790 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:40,141 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:40,493 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:40,845 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:41,197 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:41,549 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:41,901 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:42,254 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:42,606 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:42,959 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:43,311 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:43,662 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:44,013 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:44,364 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:44,715 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:45,067 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:45,418 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:45,771 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:46,122 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:46,474 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:46,827 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:47,179 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:47,531 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:47,884 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:48,236 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:48,588 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:48,940 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:49,292 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:49,644 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:49,997 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:50,348 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:50,700 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:51,052 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:51,404 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:51,756 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:52,108 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:52,460 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:52,812 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:53,164 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:53,516 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:53,868 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:54,220 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:54,572 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:54,924 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:55,276 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:55,628 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:55,980 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:56,331 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:56,684 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:57,035 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:57,388 - watchfiles.main - INFO - 1 change detected
+2025-11-12 01:38:57,739 - watchfiles.main - INFO - 1 change detected
