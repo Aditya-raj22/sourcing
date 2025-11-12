@@ -61,28 +61,8 @@ def send_email_smtp(draft: EmailDraft, from_email: str = None) -> tuple:
             if config.SMTP_USE_TLS:
                 server.starttls()
 
-            # Authenticate based on method
-            auth_method = config.SMTP_AUTH_METHOD
-
-            if auth_method == "oauth2":
-                # OAuth2 authentication (for Duke with DUO 2FA)
-                from src.services.oauth2_auth import get_oauth2_access_token
-                import base64
-
-                access_token = get_oauth2_access_token()
-
-                # Build XOAUTH2 string
-                auth_string = f"user={config.SMTP_USER}\x01auth=Bearer {access_token}\x01\x01"
-                auth_b64 = base64.b64encode(auth_string.encode()).decode()
-
-                # Authenticate with OAuth2
-                server.docmd("AUTH", f"XOAUTH2 {auth_b64}")
-                logger.info("SMTP: Authenticated via OAuth2")
-
-            else:
-                # Password authentication
-                server.login(config.SMTP_USER, config.SMTP_PASSWORD)
-                logger.info("SMTP: Authenticated via password")
+            # Authenticate with password
+            server.login(config.SMTP_USER, config.SMTP_PASSWORD)
 
             # Send
             server.send_message(msg)
@@ -96,16 +76,62 @@ def send_email_smtp(draft: EmailDraft, from_email: str = None) -> tuple:
 
     except smtplib.SMTPAuthenticationError as e:
         logger.error(f"SMTP authentication failed: {e}")
-        if config.SMTP_AUTH_METHOD == "oauth2":
-            raise ValueError("OAuth2 authentication failed. Run: python -m src.services.oauth2_auth")
-        else:
-            raise ValueError("Email authentication failed. Check SMTP_USER and SMTP_PASSWORD in .env")
+        raise ValueError("Email authentication failed. Check SMTP_USER and SMTP_PASSWORD in .env")
     except smtplib.SMTPException as e:
         logger.error(f"SMTP error: {e}")
         raise ValueError(f"Failed to send email via SMTP: {e}")
     except Exception as e:
         logger.error(f"Unexpected error sending email: {e}")
         raise
+
+
+def send_email_powerautomate(draft: EmailDraft) -> tuple:
+    """
+    Send email via Microsoft Power Automate webhook.
+
+    Perfect for Duke email with DUO 2FA - no Azure/OAuth2 setup needed!
+    Just create a simple Power Automate flow and get the webhook URL.
+
+    Args:
+        draft: EmailDraft to send
+
+    Returns:
+        Tuple of (message_id, thread_id)
+    """
+    import requests
+
+    webhook_url = config.POWER_AUTOMATE_WEBHOOK_URL
+
+    if not webhook_url:
+        raise ValueError("POWER_AUTOMATE_WEBHOOK_URL not configured in .env. See POWER_AUTOMATE_SETUP.md")
+
+    # Prepare payload for Power Automate
+    payload = {
+        "to_email": draft.to_email,
+        "subject": draft.subject,
+        "body": draft.body,
+        "draft_id": draft.id
+    }
+
+    try:
+        # Send to Power Automate webhook
+        response = requests.post(webhook_url, json=payload, timeout=30)
+
+        if response.status_code in [200, 202]:
+            # Success
+            message_id = f"pa_{draft.id}_{int(datetime.utcnow().timestamp())}"
+            thread_id = f"thread_{draft.id}"
+
+            logger.info(f"Power Automate: Email sent to {draft.to_email}")
+            return message_id, thread_id
+        else:
+            error_msg = f"Power Automate webhook failed: {response.status_code} - {response.text}"
+            logger.error(error_msg)
+            raise ValueError(error_msg)
+
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Power Automate request failed: {e}")
+        raise ValueError(f"Failed to call Power Automate webhook: {e}")
 
 
 def send_email(
@@ -186,11 +212,21 @@ def send_email(
         provider = config_obj.EMAIL_PROVIDER if config_obj else config.EMAIL_PROVIDER
 
         if provider == "smtp":
-            # Send via SMTP (Duke email, Outlook, etc.)
+            # Send via SMTP
             try:
                 message_id, thread_id = send_email_smtp(draft)
             except Exception as e:
                 logger.error(f"SMTP send failed: {e}")
+                draft.status = DraftStatus.SEND_FAILED
+                db.commit()
+                raise
+
+        elif provider == "powerautomate":
+            # Send via Power Automate webhook (Duke email with DUO 2FA)
+            try:
+                message_id, thread_id = send_email_powerautomate(draft)
+            except Exception as e:
+                logger.error(f"Power Automate send failed: {e}")
                 draft.status = DraftStatus.SEND_FAILED
                 db.commit()
                 raise
@@ -202,7 +238,7 @@ def send_email(
             logger.info(f"Gmail API: Sending email draft {draft_id} to {draft.to_email}")
 
         else:
-            raise ValueError(f"Unknown email provider: {provider}. Use 'smtp' or 'gmail'")
+            raise ValueError(f"Unknown email provider: {provider}. Use 'smtp', 'powerautomate', or 'gmail'")
 
     # Update draft
     draft.status = DraftStatus.SENT

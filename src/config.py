@@ -21,24 +21,19 @@ class Config:
     OPENAI_MODEL_EMBEDDING: str = os.getenv("OPENAI_MODEL_EMBEDDING", "text-embedding-3-large")
 
     # Email Provider Configuration
-    EMAIL_PROVIDER: str = os.getenv("EMAIL_PROVIDER", "smtp")  # "smtp" or "gmail"
+    EMAIL_PROVIDER: str = os.getenv("EMAIL_PROVIDER", "smtp")  # "smtp", "gmail", or "powerautomate"
 
-    # SMTP Configuration (for Duke email, Outlook, etc.)
+    # SMTP Configuration (for any email provider)
     SMTP_HOST: str = os.getenv("SMTP_HOST", "smtp.office365.com")
     SMTP_PORT: int = int(os.getenv("SMTP_PORT", "587"))
     SMTP_USER: str = os.getenv("SMTP_USER", "")
     SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "")
     SMTP_USE_TLS: bool = os.getenv("SMTP_USE_TLS", "true").lower() == "true"
-    SMTP_AUTH_METHOD: str = os.getenv("SMTP_AUTH_METHOD", "password")  # "password" or "oauth2"
 
-    # Microsoft OAuth2 Configuration (for Duke email with DUO 2FA)
-    MICROSOFT_CLIENT_ID: str = os.getenv("MICROSOFT_CLIENT_ID", "")
-    MICROSOFT_CLIENT_SECRET: str = os.getenv("MICROSOFT_CLIENT_SECRET", "")
-    MICROSOFT_TENANT_ID: str = os.getenv("MICROSOFT_TENANT_ID", "common")
-    MICROSOFT_REDIRECT_URI: str = os.getenv("MICROSOFT_REDIRECT_URI", "http://localhost:8000/auth/callback")
-    OAUTH_TOKEN_FILE: str = os.getenv("OAUTH_TOKEN_FILE", ".oauth_token.json")
+    # Power Automate Webhook (RECOMMENDED for Duke email with DUO 2FA)
+    POWER_AUTOMATE_WEBHOOK_URL: str = os.getenv("POWER_AUTOMATE_WEBHOOK_URL", "")
 
-    # Gmail Configuration (legacy/optional)
+    # Gmail Configuration (optional)
     GMAIL_CLIENT_ID: str = os.getenv("GMAIL_CLIENT_ID", "")
     GMAIL_CLIENT_SECRET: str = os.getenv("GMAIL_CLIENT_SECRET", "")
     GMAIL_REFRESH_TOKEN: str = os.getenv("GMAIL_REFRESH_TOKEN", "")
