@@ -1,5 +1,5 @@
 """
-Email sending service via Gmail API.
+Email sending service via SMTP or Gmail API.
 """
 
 from datetime import datetime
@@ -10,6 +10,9 @@ from src.config import config
 from src.services.quota_manager import GmailQuotaManager
 from src.services.spam_checker import check_spam_score
 from src.utils.helpers import is_business_hours, schedule_for_next_business_time
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 import logging
 
 logger = logging.getLogger(__name__)
@@ -28,6 +31,58 @@ class DuplicateSendError(Exception):
 class SpamScoreExceededError(Exception):
     """Raised when spam score is too high."""
     pass
+
+
+def send_email_smtp(draft: EmailDraft, from_email: str = None) -> tuple:
+    """
+    Send email via SMTP (Duke email, Outlook, any email provider).
+
+    Args:
+        draft: EmailDraft to send
+        from_email: Sender email (overrides config)
+
+    Returns:
+        Tuple of (message_id, thread_id)
+    """
+    from_addr = from_email or config.SMTP_USER
+
+    # Create message
+    msg = MIMEMultipart()
+    msg['From'] = from_addr
+    msg['To'] = draft.to_email
+    msg['Subject'] = draft.subject
+
+    # Add body
+    msg.attach(MIMEText(draft.body, 'plain'))
+
+    # Send via SMTP
+    try:
+        with smtplib.SMTP(config.SMTP_HOST, config.SMTP_PORT, timeout=30) as server:
+            if config.SMTP_USE_TLS:
+                server.starttls()
+
+            # Login
+            server.login(config.SMTP_USER, config.SMTP_PASSWORD)
+
+            # Send
+            server.send_message(msg)
+
+            # Generate message ID
+            message_id = f"smtp_{draft.id}_{int(datetime.utcnow().timestamp())}"
+            thread_id = f"thread_{draft.id}"
+
+            logger.info(f"SMTP: Email sent to {draft.to_email}")
+            return message_id, thread_id
+
+    except smtplib.SMTPAuthenticationError as e:
+        logger.error(f"SMTP authentication failed: {e}")
+        raise ValueError("Email authentication failed. Check SMTP_USER and SMTP_PASSWORD in .env")
+    except smtplib.SMTPException as e:
+        logger.error(f"SMTP error: {e}")
+        raise ValueError(f"Failed to send email via SMTP: {e}")
+    except Exception as e:
+        logger.error(f"Unexpected error sending email: {e}")
+        raise
 
 
 def send_email(
@@ -102,12 +157,29 @@ def send_email(
         # Mock send
         message_id = f"mock_{draft_id}"
         thread_id = f"thread_{draft_id}"
+        logger.info(f"MOCK: Sending email draft {draft_id} to {draft.to_email}")
     else:
-        # Real Gmail API send (simplified - would use actual Gmail API)
-        message_id = f"msg_{draft_id}_{int(datetime.utcnow().timestamp())}"
-        thread_id = f"thread_{draft_id}"
+        # Real send - choose provider
+        provider = config_obj.EMAIL_PROVIDER if config_obj else config.EMAIL_PROVIDER
 
-        logger.info(f"Sending email draft {draft_id} to {draft.to_email}")
+        if provider == "smtp":
+            # Send via SMTP (Duke email, Outlook, etc.)
+            try:
+                message_id, thread_id = send_email_smtp(draft)
+            except Exception as e:
+                logger.error(f"SMTP send failed: {e}")
+                draft.status = DraftStatus.SEND_FAILED
+                db.commit()
+                raise
+
+        elif provider == "gmail":
+            # Send via Gmail API (simplified - would use actual Gmail API client)
+            message_id = f"gmail_{draft_id}_{int(datetime.utcnow().timestamp())}"
+            thread_id = f"thread_{draft_id}"
+            logger.info(f"Gmail API: Sending email draft {draft_id} to {draft.to_email}")
+
+        else:
+            raise ValueError(f"Unknown email provider: {provider}. Use 'smtp' or 'gmail'")
 
     # Update draft
     draft.status = DraftStatus.SENT
