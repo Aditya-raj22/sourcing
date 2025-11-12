@@ -61,8 +61,28 @@ def send_email_smtp(draft: EmailDraft, from_email: str = None) -> tuple:
             if config.SMTP_USE_TLS:
                 server.starttls()
 
-            # Login
-            server.login(config.SMTP_USER, config.SMTP_PASSWORD)
+            # Authenticate based on method
+            auth_method = config.SMTP_AUTH_METHOD
+
+            if auth_method == "oauth2":
+                # OAuth2 authentication (for Duke with DUO 2FA)
+                from src.services.oauth2_auth import get_oauth2_access_token
+                import base64
+
+                access_token = get_oauth2_access_token()
+
+                # Build XOAUTH2 string
+                auth_string = f"user={config.SMTP_USER}\x01auth=Bearer {access_token}\x01\x01"
+                auth_b64 = base64.b64encode(auth_string.encode()).decode()
+
+                # Authenticate with OAuth2
+                server.docmd("AUTH", f"XOAUTH2 {auth_b64}")
+                logger.info("SMTP: Authenticated via OAuth2")
+
+            else:
+                # Password authentication
+                server.login(config.SMTP_USER, config.SMTP_PASSWORD)
+                logger.info("SMTP: Authenticated via password")
 
             # Send
             server.send_message(msg)
@@ -76,7 +96,10 @@ def send_email_smtp(draft: EmailDraft, from_email: str = None) -> tuple:
 
     except smtplib.SMTPAuthenticationError as e:
         logger.error(f"SMTP authentication failed: {e}")
-        raise ValueError("Email authentication failed. Check SMTP_USER and SMTP_PASSWORD in .env")
+        if config.SMTP_AUTH_METHOD == "oauth2":
+            raise ValueError("OAuth2 authentication failed. Run: python -m src.services.oauth2_auth")
+        else:
+            raise ValueError("Email authentication failed. Check SMTP_USER and SMTP_PASSWORD in .env")
     except smtplib.SMTPException as e:
         logger.error(f"SMTP error: {e}")
         raise ValueError(f"Failed to send email via SMTP: {e}")

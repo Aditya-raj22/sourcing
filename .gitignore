@@ -60,3 +60,4 @@ htmlcov/
 # Credentials
 credentials.json
 token.json
+.oauth_token.json

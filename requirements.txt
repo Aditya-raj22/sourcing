@@ -22,6 +22,7 @@ python-dotenv==1.0.0
 pydantic==2.5.3
 pydantic-settings==2.1.0
 email-validator==2.1.0
+msal==1.26.0
 
 # Testing
 pytest==7.4.4

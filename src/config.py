@@ -29,6 +29,14 @@ class Config:
     SMTP_USER: str = os.getenv("SMTP_USER", "")
     SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "")
     SMTP_USE_TLS: bool = os.getenv("SMTP_USE_TLS", "true").lower() == "true"
+    SMTP_AUTH_METHOD: str = os.getenv("SMTP_AUTH_METHOD", "password")  # "password" or "oauth2"
+
+    # Microsoft OAuth2 Configuration (for Duke email with DUO 2FA)
+    MICROSOFT_CLIENT_ID: str = os.getenv("MICROSOFT_CLIENT_ID", "")
+    MICROSOFT_CLIENT_SECRET: str = os.getenv("MICROSOFT_CLIENT_SECRET", "")
+    MICROSOFT_TENANT_ID: str = os.getenv("MICROSOFT_TENANT_ID", "common")
+    MICROSOFT_REDIRECT_URI: str = os.getenv("MICROSOFT_REDIRECT_URI", "http://localhost:8000/auth/callback")
+    OAUTH_TOKEN_FILE: str = os.getenv("OAUTH_TOKEN_FILE", ".oauth_token.json")
 
     # Gmail Configuration (legacy/optional)
     GMAIL_CLIENT_ID: str = os.getenv("GMAIL_CLIENT_ID", "")
